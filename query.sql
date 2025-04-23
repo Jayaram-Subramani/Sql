@@ -15,7 +15,6 @@ where salary > (select max(salary) from employees);
 select * from employees
 where join_date >= current_date - interval 30 day ;
 
- 
  /* Employees in each department */
  select d.department_name,
  count(e.employee_id) as total_emolotees
